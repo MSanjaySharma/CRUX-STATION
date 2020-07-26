@@ -1,0 +1,50 @@
+{
+  "name": "frontend-cruxstation",
+  "version": "1.0.0",
+  "description": "project 1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build"
+  },
+  "author": "M Sanjay Sharma",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4.10.2",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "axios": "^0.19.2",
+    "formik": "^2.1.4",
+    "js-cookie": "^2.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash.debounce": "^4.0.8",
+    "moment": "^2.27.0",
+    "next": "^9.4.2",
+    "next-redux-wrapper": "^6.0.0",
+    "nprogress": "^0.2.0",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.13.1",
+    "react": "^16.13.1",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.13.1",
+    "react-quill": "^2.0.0-beta.2",
+    "react-redux": "^7.2.0",
+    "react-render-html": "^0.6.0",
+    "reactstrap": "^8.4.1",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "slugify": "^1.4.2",
+    "universal-cookie": "^4.0.3",
+    "use-dark-mode": "^2.3.1",
+    "yup": "^0.29.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6"
+  }
+}
