@@ -13,7 +13,7 @@ A full-Stack multi-user Blogging platform to share blogs with the community.
 
 ### DEMO
 
-Open the [LIVE DEMO](crux-station.herokuapp.com/) to try Crux Station yourself.
+Open the [LIVE DEMO](https://crux-station.herokuapp.com/) to try Crux Station yourself.
 
 ![cruxstation](https://user-images.githubusercontent.com/65958268/88467138-5cf19d80-cef1-11ea-8ccd-e36e8cc8c92d.gif)
 
