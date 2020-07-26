@@ -71,4 +71,5 @@ Open the [LIVE DEMO](crux-station.herokuapp.com/) to try Crux Station yourself.
 
 ### License
 
-This project is licensed under the MIT license. See the [LICENSE]("./LICENSE") file for more info.
+[![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/MSanjaySharma/CRUX-STATION/blob/master/LICENSE)
+
