@@ -214,6 +214,7 @@ usersController.photo = (req, res) => {
 
 usersController.requireSignin = expressJwt({
   secret: process.env.JWT_SIGN_KEY,
+  algorithms: ["RS256"],
 });
 
 module.exports = usersController;
