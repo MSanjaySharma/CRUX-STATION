@@ -11,6 +11,7 @@ const usersRoutes = require("./config/routes/usersRoutes");
 const categoriesRoutes = require("./config/routes/categoriesRoutes");
 const tagsRoutes = require("./config/routes/tagsRoutes");
 const likesRoutes = require("./config/routes/likesRoutes");
+const healthcheckerRoute = require("./config/routes/healthChecker");
 
 //app
 const app = express();
@@ -27,7 +28,7 @@ app.use(cookieParser());
 if (process.env.NODE_ENV === "development") {
   app.use(cors({ origin: `${process.env.CLIENT_URL}` }));
 } else {
-  app.use(cors({origin: `${process.env.CLIENT_URL_PRODUCTION}`}))
+  app.use(cors({ origin: `${process.env.CLIENT_URL_PRODUCTION}` }));
 }
 
 //routes middlewares
@@ -35,13 +36,14 @@ app.use("/apiv1/", blogsRoutes);
 app.use("/apiv1/users", usersRoutes);
 app.use("/apiv1", categoriesRoutes);
 app.use("/apiv1", tagsRoutes);
-app.use("/apiv1", likesRoutes)
+app.use("/apiv1", likesRoutes);
+app.use("/apiv1/healthcheck", healthcheckerRoute);
 
 //port
 const port = process.env.PORT || 7331;
 
 app.listen(port, () => {
   console.log(
-  `\x1b[94mServer is running on port ${port}\x1b[39m\n\x1b[94mvisit\x1b[39m \x1b[96mhttp://localhost:7331/apiv1\x1b[39m`
+    `\x1b[94mServer is running on port ${port}\x1b[39m\n\x1b[94mvisit\x1b[39m \x1b[96mhttp://localhost:7331/apiv1\x1b[39m`
   );
 });
