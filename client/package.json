@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p $PORT",
+    "start": "next start -p 3000",
+    "start:prod": "next start -H 0.0.0.0",
+    "start:heroku": "next start -p $PORT",
     "heroku-postbuild": "npm run build"
   },
   "author": "M Sanjay Sharma",
